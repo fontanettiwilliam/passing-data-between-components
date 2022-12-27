@@ -25,7 +25,7 @@ export function Pokemon({ name, setPokemon }) {
       <img
         src={handleImg()}
         className={`pokemon ${name.toLowerCase()}`}
-        alt="name"
+        alt={name}
       />
     </button>
   );
