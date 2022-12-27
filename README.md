@@ -11,6 +11,12 @@
 - npm install
 - npm run dev
 
-# Using
+This project are using Vite ❤️
 
-This project are using Vite!
+# Do you want to learn more?
+
+<p>
+  <a href="https://www.linkedin.com/in/william-fontanetti/" title="william-fontanetti">
+   Follow my linkedin for more articles
+  </a>
+</p>
