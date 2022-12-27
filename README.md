@@ -2,9 +2,9 @@
 
 ## The project look like
 
-<center>
+<h1 align="center">
 <img src="https://github.com/fontanettiwilliam/passing-data-between-components/blob/main/src/assets/project.gif" />
-</center>
+</h1>
 
 ## Run the project
 
