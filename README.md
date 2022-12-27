@@ -13,7 +13,7 @@
 
 This project are using Vite ❤️
 
-# Do you want to learn more?
+## Do you want to learn more?
 
 <p>
   <a href="https://www.linkedin.com/in/william-fontanetti/" title="william-fontanetti">
