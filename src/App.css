@@ -5,25 +5,23 @@
   text-align: center;
 }
 
-.logo {
+
+.pokemon {
   height: 6em;
   padding: 1.5em;
   will-change: filter;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+.pokemon.charmander:hover {
+  filter: drop-shadow(0 0 2em #f97e00);
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.pokemon.bulbassauro:hover {
+  filter: drop-shadow(0 0 2em #9efbe6);
 }
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.pokemon.squirtle:hover {
+  filter: drop-shadow(0 0 2em #80ecff);
+}
+.pokemon.pikachu:hover {
+  filter: drop-shadow(0 0 2em #f8ca00);
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -36,6 +34,3 @@
   padding: 2em;
 }
 
-.read-the-docs {
-  color: #888;
-}

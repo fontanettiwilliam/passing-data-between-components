@@ -44,12 +44,23 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: transparent;
   cursor: pointer;
   transition: border-color 0.25s;
+
+  margin-right: 1rem;
 }
-button:hover {
-  border-color: #646cff;
+button.charmander:hover {
+  border-color: #f97e00;
+}
+button.bulbassauro:hover {
+  border-color: #9efbe6;
+}
+button.squirtle:hover {
+  border-color: #80ecff;
+}
+button.pikachu:hover {
+  border-color: #f8ca00;
 }
 button:focus,
 button:focus-visible {

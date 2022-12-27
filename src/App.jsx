@@ -1,34 +1,44 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
+import { useState } from "react";
+import char from "./assets/char.png";
+import bulba from "./assets/bulba.png";
+import squirt from "./assets/squirt.png";
+import pikachu from "./assets/pikachu.png";
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [pokemon, setPokemon] = useState("");
 
   return (
     <div className="App">
+      <h1>Choose your Pokemon</h1>
+
       <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
+        <button onClick={() => setPokemon("Charmander")} className="charmander">
+          <img src={char} className="pokemon charmander" alt="Charmander" />
         </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+        <button
+          onClick={() => setPokemon("Bulbassauro")}
+          className="bulbassauro"
+        >
+          <img src={bulba} className="pokemon bulbassauro" alt="Bulbassauro" />
+        </button>
+        <button onClick={() => setPokemon("Squirtle")} className="squirtle">
+          <img src={squirt} className="pokemon squirtle" alt="Squirtle" />
+        </button>
+        <button onClick={() => setPokemon("Pikachu")} className="pikachu">
+          <img src={pikachu} className="pokemon pikachu" alt="Pikachu" />
+        </button>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+
+      <div className="card">
+        {pokemon !== "" ? (
+          <h2>You chose {pokemon}</h2>
+        ) : (
+          <p>Click in one to choose</p>
+        )}
+      </div>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
