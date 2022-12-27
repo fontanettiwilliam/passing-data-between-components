@@ -1,8 +1,7 @@
 import { useState } from "react";
-import char from "./assets/char.png";
-import bulba from "./assets/bulba.png";
-import squirt from "./assets/squirt.png";
-import pikachu from "./assets/pikachu.png";
+
+import { Pokemon } from "./components/Pokemon";
+
 import "./App.css";
 
 function App() {
@@ -13,21 +12,11 @@ function App() {
       <h1>Choose your Pokemon</h1>
 
       <div>
-        <button onClick={() => setPokemon("Charmander")} className="charmander">
-          <img src={char} className="pokemon charmander" alt="Charmander" />
-        </button>
-        <button
-          onClick={() => setPokemon("Bulbassauro")}
-          className="bulbassauro"
-        >
-          <img src={bulba} className="pokemon bulbassauro" alt="Bulbassauro" />
-        </button>
-        <button onClick={() => setPokemon("Squirtle")} className="squirtle">
-          <img src={squirt} className="pokemon squirtle" alt="Squirtle" />
-        </button>
-        <button onClick={() => setPokemon("Pikachu")} className="pikachu">
-          <img src={pikachu} className="pokemon pikachu" alt="Pikachu" />
-        </button>
+        <Pokemon name="Charmander" setPokemon={setPokemon} />
+        <Pokemon name="Bulbassauro" setPokemon={setPokemon} />
+        <Pokemon name="Squirtle" setPokemon={setPokemon} />
+        <Pokemon name="Pikachu" setPokemon={setPokemon} />
+        <Pokemon name="I don't know!" setPokemon={setPokemon} />
       </div>
 
       <div className="card">

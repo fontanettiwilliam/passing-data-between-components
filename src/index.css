@@ -50,6 +50,9 @@ button {
 
   margin-right: 1rem;
 }
+button:hover {
+  border-color: #e7cbff;
+}
 button.charmander:hover {
   border-color: #f97e00;
 }
