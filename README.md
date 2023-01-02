@@ -1,5 +1,8 @@
 # passing-data-between-components
 
+## Let's talk about react
+This repository is part of the demonstration of an article I wrote on LinkedIn. To read the whole article just [click here](https://www.linkedin.com/pulse/lets-talk-react-how-passing-data-between-components-fontanetti/)
+
 ## The project look like
 
 <h1 align="center">
